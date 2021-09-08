@@ -15,13 +15,13 @@ echo '${GITHUB_TOKEN}'
 if [ -z "$GITHUB_TOKEN" ]; then
   echo 'github_token is null'
   msg='deploy'
-  githubUrl=git@github.com:lsq4590578/vuepress-theme-vdoing.git
+  githubUrl=git@github.com:lsq4590578/blog.git
   git config --global user.name "lsq4590578"
   git config --global user.email "lsq_4590578@126.com"
 else
   echo 'github_token is not null'
   msg='来自github actions的自动部署'
-  githubUrl=https://lsq4590578:${GITHUB_TOKEN}@github.com/lsq4590578/vuepress-theme-vdoing.git
+  githubUrl=https://lsq4590578:${GITHUB_TOKEN}@github.com/lsq4590578/blog.git
   echo ${githubUrl}
   git config --global user.name "lsq4590578"
   git config --global user.email "lsq_4590578@126.com"
