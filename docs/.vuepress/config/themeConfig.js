@@ -52,7 +52,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: '/blog/img/busy.svg',
+    avatar: '/img/busy.svg',
     name: 'Joan Lian',
     slogan: '测试开发小学生',
   },
